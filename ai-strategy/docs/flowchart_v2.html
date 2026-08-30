@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Strategy — Operational Flowchart</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0B1120;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: #E2E8F0;
+    padding: 40px 48px 60px;
+  }
+  .grid-bg {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; }
+
+  /* ---------- Header ---------- */
+  h1 {
+    font-size: 30px; font-weight: 700; letter-spacing: -0.5px;
+    color: #22D3EE; margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 13px; color: #94A3B8; line-height: 1.5;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+
+  /* ---------- Phase separator ---------- */
+  .phase {
+    display: flex; align-items: center; gap: 14px;
+    margin: 30px 0 16px;
+  }
+  .phase-label {
+    font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: #CBD5E1; white-space: nowrap;
+  }
+  .phase-line { flex: 1; border-top: 2px dashed #334155; }
+
+  /* ---------- Box grid ---------- */
+  .row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .box {
+    flex: 1 1 calc(25% - 16px); min-width: 230px;
+    background: rgba(30, 41, 59, 0.55);
+    border: 2px solid #475569; border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .box-head {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12.5px; font-weight: 700; margin-bottom: 7px;
+    line-height: 1.35;
+  }
+  .num {
+    flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11.5px; font-weight: 800; color: #0B1120; background: #94A3B8;
+  }
+  .box-detail { font-size: 11px; color: #94A3B8; line-height: 1.5; font-family: 'Consolas', 'Courier New', monospace; }
+  .badge {
+    display: inline-block; font-size: 9.5px; font-weight: 800; letter-spacing: 1px;
+    text-transform: uppercase; padding: 2px 7px; border-radius: 999px;
+    vertical-align: middle; margin-left: 6px;
+  }
+  .b-teal  { border: 2px solid #2DD4BF; }
+  .b-teal .box-head { color: #2DD4BF; }
+  .b-teal .num { background: #2DD4BF; color: #0B1120; }
+  .b-brown { border: 2px solid #D97706; }
+  .b-brown .box-head { color: #D97706; }
+  .b-brown .num { background: #D97706; color: #0B1120; }
+  .b-purple{ border: 2px solid #A855F7; }
+  .b-purple .box-head { color: #A855F7; }
+  .b-purple .num { background: #A855F7; color: #0B1120; }
+  .b-green { border: 2px solid #22C55E; }
+  .b-green .box-head { color: #22C55E; }
+  .b-green .num { background: #22C55E; color: #0B1120; }
+  .b-blue  { border: 2px solid #3B82F6; }
+  .b-blue .box-head { color: #3B82F6; }
+  .b-blue .num { background: #3B82F6; color: #0B1120; }
+
+  .badge-teal   { background: rgba(45,212,191,0.15); color: #2DD4BF; }
+  .badge-brown  { background: rgba(217,119,6,0.15);  color: #F59E0B; }
+  .badge-purple { background: rgba(168,85,247,0.15); color: #C084FC; }
+  .badge-green  { background: rgba(34,197,94,0.15);  color: #4ADE80; }
+  .badge-blue   { background: rgba(59,130,246,0.15); color: #60A5FA; }
+
+  /* Arrow down */
+  .arrow { text-align: center; font-size: 18px; color: #475569; padding: 2px 0; }
+
+  /* Exit gate */
+  .exit {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 2px solid #22C55E; border-radius: 999px;
+    background: rgba(34,197,94,0.1); color: #4ADE80;
+    font-size: 11.5px; font-weight: 700; padding: 7px 14px; margin-top: 10px;
+  }
+
+  /* ---------- Footer legend ---------- */
+  .legend {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    margin-top: 44px; padding-top: 22px; border-top: 1px solid #1E293B;
+  }
+  .lg-col .lg-title {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700; color: #E2E8F0; margin-bottom: 10px;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
+  .d-teal   { background: #2DD4BF; }
+  .d-green  { background: #22C55E; }
+  .d-purple { background: #A855F7; }
+  .d-brown  { background: #D97706; }
+  .d-blue   { background: #3B82F6; }
+  .lg-col ul { list-style: none; }
+  .lg-col li { font-size: 11px; color: #94A3B8; line-height: 1.7; font-family: 'Consolas', 'Courier New', monospace; }
+  .lg-col li b { color: #CBD5E1; font-weight: 600; }
+  .foot {
+    margin-top: 26px; font-size: 10.5px; color: #64748B;
+    font-family: 'Consolas', 'Courier New', monospace;
+  }
+  code { background: rgba(148,163,184,0.12); padding: 1px 5px; border-radius: 4px; color: #A5B4FC; }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="wrap">
+
+  <h1>AI Strategy — Operational Flowchart</h1>
+  <div class="subtitle">
+    Current draft · ~4-week engagement · mid-size SaaS (250–1,000 FTE) · primary objective: cost reduction &amp; operational efficiency · mature data platform · source: build-plan.md (v0.1) · 26 Aug 2026
+  </div>
+
+  <!-- ============ PHASE 1 ============ -->
+  <div class="phase"><span class="phase-label">Phase 1: Baseline &amp; Context — Week 1 (compressed)</span><div class="phase-line"></div></div>
+  <div class="row">
+    <div class="box b-teal">
+      <div class="box-head"><span class="num">1</span>External research (start now)<span class="badge badge-teal">External</span></div>
+      <div class="box-detail">SaaS cost benchmarks by function — % of revenue, typical ratios</div>
+    </div>
+    <div class="box b-teal">
+      <div class="box-head"><span class="num">2</span>AI efficiency benchmarks<span class="badge badge-teal">External</span></div>
+      <div class="box-detail">Support deflection rates, dev productivity gains, ops savings</div>
+    </div>
+    <div class="box b-teal">
+      <div class="box-head"><span class="num">3</span>Competitive AI adoption<span class="badge badge-teal">External</span></div>
+      <div class="box-detail">Peer SaaS companies — vendor landscape</div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="box b-brown">
+      <div class="box-head"><span class="num">4</span>Cost structure by function<span class="badge badge-brown">Internal</span></div>
+      <div class="box-detail">Approx. % of opex; or headcount + loaded cost</div>
+    </div>
+    <div class="box b-brown">
+      <div class="box-head"><span class="num">5</span>Tooling inventory<span class="badge badge-brown">Internal</span></div>
+      <div class="box-detail">Which SaaS/cloud tools, which already ship AI features</div>
+    </div>
+    <div class="box b-brown">
+      <div class="box-head"><span class="num">6</span>Existing AI usage<span class="badge badge-brown">Internal</span></div>
+      <div class="box-detail">Incl. shadow AI — ChatGPT / Claude / GitHub Copilot adoption</div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="box b-brown">
+      <div class="box-head"><span class="num">7</span>Process hotspots<span class="badge badge-brown">Internal</span></div>
+      <div class="box-detail">Recurring manual work, known bottlenecks, ticket volumes</div>
+    </div>
+    <div class="box b-brown">
+      <div class="box-head"><span class="num">8</span>Stakeholder inputs<span class="badge badge-brown">Internal</span></div>
+      <div class="box-detail">COO, CFO, Heads of Support / Eng / Sales / Marketing / People</div>
+    </div>
+    <div class="box b-purple">
+      <div class="box-head"><span class="num">✓</span>Exit gate</div>
+      <div class="box-detail">Cost map by function + AI-readiness snapshot + external benchmarks</div>
+    </div>
+  </div>
+
+  <!-- ============ PHASE 2 ============ -->
+  <div class="phase"><span class="phase-label">Phase 2: Opportunity Identification — Week 2</span><div class="phase-line"></div></div>
+  <div class="row">
+    <div class="box b-purple">
+      <div class="box-head"><span class="num">1</span>Use case inventory<span class="badge badge-purple">Build</span></div>
+      <div class="box-detail">Target 20–30 across support, eng, marketing, sales, finance, legal, HR, IT</div>
+    </div>
+    <div class="box b-purple">
+      <div class="box-head"><span class="num">2</span>Score each use case</div>
+      <div class="box-detail">Cost impact, feasibility, data readiness, risk, time-to-value, capex/opex</div>
+    </div>
+    <div class="box b-purple">
+      <div class="box-head"><span class="num">3</span>Shortlist top 5–8</div>
+      <div class="box-detail">Rough business cases — assumptions labeled</div>
+    </div>
+    <div class="box b-purple">
+      <div class="box-head"><span class="num">4</span>Classify</div>
+      <div class="box-detail">Quick wins (&lt;3 mo) · build bets (3–12 mo) · strategic (12+ mo)</div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="exit">✅ EXIT: prioritized shortlist + top-3 quick wins validated with owners</div>
+
+  <!-- ============ PHASE 3 ============ -->
+  <div class="phase"><span class="phase-label">Phase 3: Strategy Formulation — Week 3</span><div class="phase-line"></div></div>
+  <div class="row">
+    <div class="box b-green">
+      <div class="box-head"><span class="num">1</span>Vision &amp; principles</div>
+      <div class="box-detail">Vision, mission, guiding principles</div>
+    </div>
+    <div class="box b-green">
+      <div class="box-head"><span class="num">2</span>Target architecture</div>
+      <div class="box-detail">How AI lands on existing data platform — data platform → feature/vector store → LLM ops/MLOps → apps</div>
+    </div>
+    <div class="box b-green">
+      <div class="box-head"><span class="num">3</span>Build vs buy</div>
+      <div class="box-detail">Per use-case cluster — vendor landscape from WS1 research</div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="row">
+    <div class="box b-green">
+      <div class="box-head"><span class="num">4</span>Governance &amp; responsible AI<span class="badge badge-green">Compliance</span></div>
+      <div class="box-detail">Policy, risk, compliance, vendor risk, EU AI Act mapping</div>
+    </div>
+    <div class="box b-green">
+      <div class="box-head"><span class="num">5</span>Talent &amp; enablement</div>
+      <div class="box-detail">AI PM, ML engineer, prompt/LLM ops · center-of-excellence vs embedded · upskilling</div>
+    </div>
+    <div class="box b-green">
+      <div class="box-head"><span class="num">6</span>Investment case</div>
+      <div class="box-detail">TCO, cost savings model, ROI, payback, phasing</div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="exit">✅ EXIT: draft strategy sections — each internally consistent and quantified where possible</div>
+
+  <!-- ============ PHASE 4 ============ -->
+  <div class="phase"><span class="phase-label">Phase 4: Synthesis &amp; Delivery — Week 4</span><div class="phase-line"></div></div>
+  <div class="row">
+    <div class="box b-blue">
+      <div class="box-head"><span class="num">1</span>Integrate into D1–D6</div>
+      <div class="box-detail">Merge workstream outputs into deliverable set</div>
+    </div>
+    <div class="box b-blue">
+      <div class="box-head"><span class="num">2</span>Stress-test assumptions<span class="badge badge-blue">Sensitivity</span></div>
+      <div class="box-detail">Savings %, adoption ramp, licensing costs</div>
+    </div>
+    <div class="box b-blue">
+      <div class="box-head"><span class="num">3</span>Review &amp; finalize</div>
+      <div class="box-detail">Review with stakeholders; finalize</div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="exit">✅ EXIT: all deliverables complete, reviewed, ready for exec presentation</div>
+
+  <!-- ============ FOOTER / LEGEND ============ -->
+  <div class="legend">
+    <div class="lg-col">
+      <div class="lg-title"><span class="dot d-teal"></span>Input Source</div>
+      <ul>
+        <li><b>External</b> — research, no company input (start now)</li>
+        <li><b>Internal</b> — needs company input / interviews</li>
+      </ul>
+    </div>
+    <div class="lg-col">
+      <div class="lg-title"><span class="dot d-purple"></span>Deliverables (D1–D6)</div>
+      <ul>
+        <li>D1 AI Strategy · <code>design.md</code></li>
+        <li>D2 Use cases + matrix · <code>docs/use-cases.md</code></li>
+        <li>D3 Quick-win roadmap · <code>docs/roadmap.md</code></li>
+        <li>D4 Business case · <code>docs/business-case.xlsx</code></li>
+        <li>D5 Governance framework · <code>docs/governance.md</code></li>
+        <li>D6 Exec summary · <code>docs/exec-summary.md</code></li>
+      </ul>
+    </div>
+    <div class="lg-col">
+      <div class="lg-title"><span class="dot d-green"></span>Key Assumptions</div>
+      <ul>
+        <li>Cost structure data from company (labeled estimates)</li>
+        <li>Objective stays cost/efficiency; product AI = secondary scan</li>
+        <li>Mature data platform — no infra build required</li>
+        <li>AI licensing budget not fixed — model ranges</li>
+      </ul>
+    </div>
+    <div class="lg-col">
+      <div class="lg-title"><span class="dot d-brown"></span>Risks &amp; Mitigations</div>
+      <ul>
+        <li><b>Savings overestimated</b> — sensitivity analysis, pilot-then-scale</li>
+        <li><b>Shadow AI sprawl</b> — governance framework + acceptable use</li>
+        <li><b>No interview ownership</b> — stakeholder map + exec sponsorship</li>
+        <li><b>EU AI Act / residency</b> — compliance mapping</li>
+        <li><b>Scope creep → product AI</b> — explicit non-goals</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">Auto-generated 2026-08-30 from build-plan.md (ai-strategy) · style: operational flowchart v3.1 · regenerate to refresh</div>
+
+</div>
+</body>
+</html>
