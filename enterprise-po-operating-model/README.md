@@ -13,6 +13,10 @@
 - [templates/decision-log.md](templates/decision-log.md) — append-only decision log: context, options, rationale, supersessions. Kills tribal knowledge.
 - [templates/adoption-tracker.xlsx](templates/adoption-tracker.xlsx) — Phase 4–5 adoption: targets block, weekly active users → auto adoption % vs target, actual hours saved, escalation rule.
 - [templates/benefit-tracker.xlsx](templates/benefit-tracker.xlsx) — Phase 5 benefit realization: baseline vs plan vs quarterly actuals, direction-aware % of plan (higher/lower), auto status (On track/Behind/At risk).
+- [templates/build-vs-buy-matrix.xlsx](templates/build-vs-buy-matrix.xlsx) — Phase 2: 10 weighted criteria × Build/Buy/Configure, auto weighted totals + recommendation. Guide: independent scoring, PoC trigger.
+- [templates/vendor-scorecard.xlsx](templates/vendor-scorecard.xlsx) — Phase 2: weighted vendor comparison, auto totals + rank + PoC shortlist (top 2). Compliance = veto criterion.
+- [templates/rfi-rfp.md](templates/rfi-rfp.md) — RFI template (8 requirement categories vendors respond to) + RFP checklist + commercial comparison notes.
+- [templates/poc-evaluation.md](templates/poc-evaluation.md) — PoC plan: objectives, must-have success criteria agreed up front, evaluation script, weighted scoring, disqualification rules.
 - [workshops/](workshops/README.md) — workshop pack: facilitator guide + 3 session agendas (role/process → instruments → governance/metrics) + project mapping worksheet. The adoption vehicle for the whole kit.
 
 **Next steps:**

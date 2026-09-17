@@ -1,0 +1,42 @@
+{
+  "full_calc_on_load": true,
+  "sheets": [
+    {
+      "name": "Matrix",
+      "column_widths": {"A": 30, "B": 12, "C": 14, "D": 14, "E": 14, "F": 40},
+      "merges": ["A1:F1", "A2:F2"],
+      "rows": [
+        [{"value": "Build vs Buy vs Configure — Decision Matrix", "bold": true, "font_size": 16}, null, null, null, null, null],
+        [{"value": "Phase 2 · weighted criteria · score 1–5 per option · weighted total (max 5) · matrix informs, sponsor decides at Gate 3", "italic": true, "font_size": 10, "font_color": "595959"}, null, null, null, null, null],
+        [null, null, null, null, null, null],
+        [{"value": "Criterion", "bold": true, "fill": "D9E1F2"}, {"value": "Weight", "bold": true, "fill": "D9E1F2"}, {"value": "Build in-house", "bold": true, "fill": "D9E1F2"}, {"value": "Buy vendor", "bold": true, "fill": "D9E1F2"}, {"value": "Configure (no-code/AI)", "bold": true, "fill": "D9E1F2"}, {"value": "Notes", "bold": true, "fill": "D9E1F2"}],
+        [{"value": "Time to value", "align": "left"}, {"value": 0.15, "fill": "FFF2CC", "format": "0%"}, {"value": 3, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 5, "fill": "FFF2CC"}, {"value": "Configure usually fastest for internal automation", "italic": true, "font_color": "808080"}],
+        [{"value": "Total cost (TCO 3-yr)", "align": "left"}, {"value": 0.15, "fill": "FFF2CC", "format": "0%"}, {"value": 2, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 5, "fill": "FFF2CC"}, {"value": "Use TCO figures from the business case", "italic": true, "font_color": "808080"}],
+        [{"value": "Functional fit", "align": "left"}, {"value": 0.12, "fill": "FFF2CC", "format": "0%"}, {"value": 5, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": "Build can be exact; configure limited by platform", "italic": true, "font_color": "808080"}],
+        [{"value": "Integration effort", "align": "left"}, {"value": 0.1, "fill": "FFF2CC", "format": "0%"}, {"value": 2, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": "", "italic": true, "font_color": "808080"}],
+        [{"value": "Maintenance burden", "align": "left"}, {"value": 0.1, "fill": "FFF2CC", "format": "0%"}, {"value": 1, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 5, "fill": "FFF2CC"}, {"value": "Vendor/platform owns updates", "italic": true, "font_color": "808080"}],
+        [{"value": "Customization flexibility", "align": "left"}, {"value": 0.08, "fill": "FFF2CC", "format": "0%"}, {"value": 5, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": "", "italic": true, "font_color": "808080"}],
+        [{"value": "Security & compliance", "align": "left"}, {"value": 0.1, "fill": "FFF2CC", "format": "0%"}, {"value": 3, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": "Assess vendor certifications + platform controls", "italic": true, "font_color": "808080"}],
+        [{"value": "Vendor / ecosystem risk", "align": "left"}, {"value": 0.08, "fill": "FFF2CC", "format": "0%"}, {"value": 3, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": "", "italic": true, "font_color": "808080"}],
+        [{"value": "Internal talent availability", "align": "left"}, {"value": 0.07, "fill": "FFF2CC", "format": "0%"}, {"value": 4, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": 5, "fill": "FFF2CC"}, {"value": "Can the team build and maintain it?", "italic": true, "font_color": "808080"}],
+        [{"value": "Strategic control", "align": "left"}, {"value": 0.05, "fill": "FFF2CC", "format": "0%"}, {"value": 5, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": "Own code = full control", "italic": true, "font_color": "808080"}],
+        [null, null, null, null, null, null],
+        [{"value": "Weighted total", "bold": true, "fill": "E2EFDA"}, {"value": "100%", "format": "0%", "bold": true, "fill": "E2EFDA"}, {"formula": "=SUMPRODUCT($B$5:$B$14,C5:C14)", "format": "0.00", "bold": true, "fill": "E2EFDA"}, {"formula": "=SUMPRODUCT($B$5:$B$14,D5:D14)", "format": "0.00", "bold": true, "fill": "E2EFDA"}, {"formula": "=SUMPRODUCT($B$5:$B$14,E5:E14)", "format": "0.00", "bold": true, "fill": "E2EFDA"}, {"value": "Highest wins the recommendation", "italic": true, "font_color": "595959"}],
+        [{"value": "Recommendation", "bold": true, "fill": "E2EFDA"}, null, {"formula": "=INDEX(C4:E4,MATCH(MAX(C16:E16),C16:E16,0))", "bold": true, "fill": "E2EFDA"}, null, null, {"value": "Decision still sits with sponsor at Gate 3", "italic": true, "font_color": "595959"}]
+      ]
+    },
+    {
+      "name": "Guide",
+      "column_widths": {"A": 30, "B": 90},
+      "rows": [
+        [{"value": "How to use the Build-vs-Buy Matrix", "bold": true, "font_size": 13}],
+        [{"value": "Scoring", "wrap": true}, {"value": "1 = poor / no fit · 5 = excellent. Score each option independently — do NOT score relative to each other.", "wrap": true}],
+        [{"value": "Who scores", "wrap": true}, {"value": "EPO + solution architect + process owner, independently, then average. One person's scores are an opinion, not a decision.", "wrap": true}],
+        [{"value": "Weights", "wrap": true}, {"value": "Tune per opportunity and portfolio priorities; weights must sum to 100%. Time-to-value and TCO are usually the heavyweights for internal automation.", "wrap": true}],
+        [{"value": "Three options minimum", "wrap": true}, {"value": "Always score Build, Buy, AND Configure. 'Do nothing' lives in the business case as the baseline option, not here.", "wrap": true}],
+        [{"value": "PoC trigger", "wrap": true}, {"value": "If the top option is uncertain (gap < 0.3 to the runner-up) or the claim is unproven, run a PoC before Gate 3 (see poc-evaluation.md).", "wrap": true}],
+        [{"value": "Decision", "wrap": true}, {"value": "The matrix informs; the sponsor decides at Gate 3. Record the decision and rationale in the Decision Log.", "wrap": true}]
+      ]
+    }
+  ]
+}
