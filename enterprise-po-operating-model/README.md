@@ -9,6 +9,8 @@
 - [templates/intake-template.md](templates/intake-template.md) — Phase 0 intake form: plain-language problem, affected users, volume, evidence.
 - [templates/triage-scorecard.xlsx](templates/triage-scorecard.xlsx) — Phase 0 triage: 8 criteria × 0–2 (max 16), auto-total + verdict (≥12 HIGH / 9–11 MEDIUM / <9 LOW), 0–2 dropdowns.
 - [templates/steering-pager.md](templates/steering-pager.md) — monthly steering 1-pager: outcomes-first metrics, financials vs plan, top risks, decisions needed.
+- [templates/raid-log.xlsx](templates/raid-log.xlsx) — RAID tracker: R/A/I/D types, status + RAG dropdowns, auto exposure (impact × probability), color-coded, autofilter + frozen header.
+- [templates/decision-log.md](templates/decision-log.md) — append-only decision log: context, options, rationale, supersessions. Kills tribal knowledge.
 
 **Next steps:**
 - [x] Draft ROI model + business case canvas templates

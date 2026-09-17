@@ -10,7 +10,7 @@
 | 2 | Phase 0 templates (intake, triage scorecard) | ✅ Done |
 | 3 | Economics templates (ROI model, business case canvas) | ✅ Done |
 | 4 | Steering 1-pager | ✅ Done |
-| 5 | RAID log, decision log templates | ⛔ Planned |
+| 5 | RAID log, decision log templates | ✅ Done |
 | 6 | Team workshops 1–3 (role/process → instruments → governance) | ⛔ Planned |
 | 7 | Confirm ROI conventions with Finance | ⛔ Planned |
 | 8 | Template storage decision (single source of truth) | ⛔ Planned |

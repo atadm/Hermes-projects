@@ -1,0 +1,60 @@
+{
+  "full_calc_on_load": true,
+  "sheets": [
+    {
+      "name": "RAID Log",
+      "column_widths": {"A": 9, "B": 10, "C": 42, "D": 18, "E": 12, "F": 14, "G": 10, "H": 8, "I": 8, "J": 8, "K": 42, "L": 12, "M": 22},
+      "merges": ["A1:M1", "A2:M2"],
+      "freeze_panes": "A5",
+      "autofilter": "A4:M14",
+      "rows": [
+        [{"value": "RAID Log — <Project / Team>", "bold": true, "font_size": 16}, null, null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Risks · Assumptions · Issues · Dependencies — update weekly · top 3 risks/issues feed the steering 1-pager · decisions made here go to the Decision Log", "italic": true, "font_size": 10, "font_color": "595959"}, null, null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Type", "bold": true, "fill": "D9E1F2"}, {"value": "ID", "bold": true, "fill": "D9E1F2"}, {"value": "Title / description", "bold": true, "fill": "D9E1F2"}, {"value": "Owner", "bold": true, "fill": "D9E1F2"}, {"value": "Raised", "bold": true, "fill": "D9E1F2"}, {"value": "Status", "bold": true, "fill": "D9E1F2"}, {"value": "RAG", "bold": true, "fill": "D9E1F2"}, {"value": "Impact (1–5)", "bold": true, "fill": "D9E1F2"}, {"value": "Probability (1–5)", "bold": true, "fill": "D9E1F2"}, {"value": "Exposure", "bold": true, "fill": "D9E1F2"}, {"value": "Mitigation / action plan", "bold": true, "fill": "D9E1F2"}, {"value": "Target date", "bold": true, "fill": "D9E1F2"}, {"value": "Notes", "bold": true, "fill": "D9E1F2"}],
+        [{"value": "R", "fill": "FFF2CC"}, {"value": "R-001", "fill": "FFF2CC"}, {"value": "Vendor delivery slips on core integration", "wrap": true, "fill": "FFF2CC"}, {"value": "EPO / Vendor mgr", "fill": "FFF2CC"}, {"value": "2026-09-17", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "Open", "fill": "FFF2CC"}, {"value": "Red", "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"formula": "=IF(AND(H5<>\"\",I5<>\"\"),H5*I5,\"\")"}, {"value": "Weekly vendor checkpoint; fallback to in-house integration", "wrap": true, "fill": "FFF2CC"}, {"value": "2026-12-15", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "A", "fill": "FFF2CC"}, {"value": "A-001", "fill": "FFF2CC"}, {"value": "In-house team has capacity for UAT in Q4", "wrap": true, "fill": "FFF2CC"}, {"value": "EPO", "fill": "FFF2CC"}, {"value": "2026-09-17", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "Open", "fill": "FFF2CC"}, {"value": "Yellow", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H6<>\"\",I6<>\"\"),H6*I6,\"\")"}, {"value": "Confirm staffing with delivery lead in November", "wrap": true, "fill": "FFF2CC"}, {"value": "2026-11-20", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "I", "fill": "FFF2CC"}, {"value": "I-001", "fill": "FFF2CC"}, {"value": "Licensing cost overrun on platform seats", "wrap": true, "fill": "FFF2CC"}, {"value": "EPO / Procurement", "fill": "FFF2CC"}, {"value": "2026-09-17", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "Mitigating", "fill": "FFF2CC"}, {"value": "Yellow", "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H7<>\"\",I7<>\"\"),H7*I7,\"\")"}, {"value": "Renegotiate tier; reduce seat count by 15%", "wrap": true, "fill": "FFF2CC"}, {"value": "2026-10-31", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "D", "fill": "FFF2CC"}, {"value": "D-001", "fill": "FFF2CC"}, {"value": "Security review sign-off before go-live", "wrap": true, "fill": "FFF2CC"}, {"value": "Security / EPO", "fill": "FFF2CC"}, {"value": "2026-09-17", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "Monitoring", "fill": "FFF2CC"}, {"value": "Yellow", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H8<>\"\",I8<>\"\"),H8*I8,\"\")"}, {"value": "Schedule review 4 weeks before go-live", "wrap": true, "fill": "FFF2CC"}, {"value": "2026-12-01", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H9<>\"\",I9<>\"\"),H9*I9,\"\")"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H10<>\"\",I10<>\"\"),H10*I10,\"\")"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H11<>\"\",I11<>\"\"),H11*I11,\"\")"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H12<>\"\",I12<>\"\"),H12*I12,\"\")"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H13<>\"\",I13<>\"\"),H13*I13,\"\")"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=IF(AND(H14<>\"\",I14<>\"\"),H14*I14,\"\")"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}]
+      ],
+      "validations": [
+        {"range": "A5:A14", "type": "list", "formula1": "\"R,A,I,D\""},
+        {"range": "F5:F14", "type": "list", "formula1": "\"Open,Mitigating,Monitoring,Resolved,Closed\""},
+        {"range": "G5:G14", "type": "list", "formula1": "\"Red,Yellow,Green\""}
+      ],
+      "conditional_formats": [
+        {"range": "G5:G14", "type": "cell_is", "operator": "equal", "formula": ["\"Red\""], "fill": "FFC7CE"},
+        {"range": "G5:G14", "type": "cell_is", "operator": "equal", "formula": ["\"Yellow\""], "fill": "FFEB9C"},
+        {"range": "G5:G14", "type": "cell_is", "operator": "equal", "formula": ["\"Green\""], "fill": "C6EFCE"},
+        {"range": "J5:J14", "type": "cell_is", "operator": "greaterThanOrEqual", "formula": ["12"], "fill": "FFC7CE"},
+        {"range": "J5:J14", "type": "cell_is", "operator": "lessThan", "formula": ["6"], "fill": "C6EFCE"}
+      ]
+    },
+    {
+      "name": "Legend & Guide",
+      "column_widths": {"A": 30, "B": 80},
+      "rows": [
+        [{"value": "RAID definitions", "bold": true, "font_size": 13}],
+        [{"value": "R — Risk", "wrap": true}, {"value": "Something that may happen in the future and hurt the project. Has probability + impact. Manage with mitigation.", "wrap": true}],
+        [{"value": "A — Assumption", "wrap": true}, {"value": "Something believed to be true without proof. Validate it — an invalid assumption becomes a risk or issue.", "wrap": true}],
+        [{"value": "I — Issue", "wrap": true}, {"value": "Something that has already happened and needs action now. Owner + target date required.", "wrap": true}],
+        [{"value": "D — Dependency", "wrap": true}, {"value": "Something the project depends on (another team, vendor, system, decision). Track owner and date.", "wrap": true}],
+        [{"value": ""}],
+        [{"value": "Exposure scoring", "bold": true, "font_size": 13}],
+        [{"value": "Exposure", "wrap": true}, {"value": "= Impact × Probability (for risks only; leave blank for A/I/D). 1–25 scale. ≥12 = red, <6 = green, otherwise yellow.", "wrap": true}],
+        [{"value": ""}],
+        [{"value": "Cadence & rules", "bold": true, "font_size": 13}],
+        [{"value": "Update weekly", "wrap": true}, {"value": "EPO reviews the log weekly; top 3 risks/issues feed the steering 1-pager monthly.", "wrap": true}],
+        [{"value": "Status transitions", "wrap": true}, {"value": "Open → Mitigating/Monitoring → Resolved (or Closed). Never delete rows — history matters.", "wrap": true}],
+        [{"value": "Decisions", "wrap": true}, {"value": "When a RAID item triggers a decision, record it in the Decision Log.", "wrap": true}],
+        [{"value": "Ownership", "wrap": true}, {"value": "Every item has exactly one owner. No owner = item not tracked.", "wrap": true}]
+      ]
+    }
+  ]
+}
