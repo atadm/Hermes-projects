@@ -17,6 +17,12 @@
 - [templates/vendor-scorecard.xlsx](templates/vendor-scorecard.xlsx) — Phase 2: weighted vendor comparison, auto totals + rank + PoC shortlist (top 2). Compliance = veto criterion.
 - [templates/rfi-rfp.md](templates/rfi-rfp.md) — RFI template (8 requirement categories vendors respond to) + RFP checklist + commercial comparison notes.
 - [templates/poc-evaluation.md](templates/poc-evaluation.md) — PoC plan: objectives, must-have success criteria agreed up front, evaluation script, weighted scoring, disqualification rules.
+- [templates/prd-template.md](templates/prd-template.md) — Phase 3 requirements contract: users, goals/non-goals, MoSCoW requirements + acceptance criteria, NFRs (incl. EU AI Act), sign-off. Changes go through the decision log.
+- [templates/stakeholder-map.md](templates/stakeholder-map.md) — power-interest grid + register: quadrant strategies (manage closely / keep satisfied / keep informed / monitor).
+- [templates/change-impact-assessment.md](templates/change-impact-assessment.md) — what changes, who's impacted, resistance drivers, readiness; feeds comms, training, rollout.
+- [templates/comms-plan.md](templates/comms-plan.md) — audience × message × channel × timing; 3-messages-max rule; sponsor-speaks-first; phased (pre-launch/launch/reinforce).
+- [templates/training-plan.md](templates/training-plan.md) — role-specific training plan + materials checklist; completion is a Gate 4 condition.
+- [templates/rollout-hypercare-checklist.md](templates/rollout-hypercare-checklist.md) — Gate 4 pre-launch checks, wave plan, hypercare support tiers (L1/L2/L3), post-hypercare handover to Gate 5.
 - [workshops/](workshops/README.md) — workshop pack: facilitator guide + 3 session agendas (role/process → instruments → governance/metrics) + project mapping worksheet. The adoption vehicle for the whole kit.
 
 **Next steps:**

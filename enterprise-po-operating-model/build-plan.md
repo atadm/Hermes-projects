@@ -24,8 +24,9 @@
 5. Benefit realization tracker (Phase 5) — ✅ done
 6. Risk register — merged into RAID log (Impact × Probability = exposure)
 7. Selection kit: build-vs-buy matrix, vendor scorecard, RFI/RFP, PoC evaluation — ✅ done
-8. Stakeholder map / comms plan templates (Phase 1/4)
-9. Workshop pack for sessions 1–3 — ✅ done (sessions to run)
+8. Batch 1 (Change + PRD): stakeholder map, change impact, comms plan, training plan, rollout/hypercare, PRD — ✅ done
+9. Batch 2 (remaining): TCO model, pain quantification, RACI, backlog/roadmap, KPI tree, quarterly value review — ⛔ next
+10. Workshop pack for sessions 1–3 — ✅ done (sessions to run)
 
 ## Rules
 

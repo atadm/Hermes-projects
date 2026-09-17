@@ -112,7 +112,7 @@ Phase 0 Intake → G1 → Phase 1 Discovery → G2 → Phase 2 Selection → G3
 
 **Tooling preferences:** process/value-stream mapping via **diagrams.net (draw.io), Confluence diagrams, or Figma** (not Miro). Backlog, docs, and dashboards per org standards.
 
-**Templates available** (in `templates/`): Phase 0 — intake-template.md, triage-scorecard.xlsx · Economics — roi-model.xlsx, business-case-canvas.md · Selection — build-vs-buy-matrix.xlsx, vendor-scorecard.xlsx, rfi-rfp.md, poc-evaluation.md · Delivery — raid-log.xlsx, decision-log.md, steering-pager.md · Measurement — adoption-tracker.xlsx, benefit-tracker.xlsx.
+**Templates available** (in `templates/`): Phase 0 — intake-template.md, triage-scorecard.xlsx · Economics — roi-model.xlsx, business-case-canvas.md · Selection — build-vs-buy-matrix.xlsx, vendor-scorecard.xlsx, rfi-rfp.md, poc-evaluation.md · Delivery — prd-template.md, raid-log.xlsx, decision-log.md, steering-pager.md · Change — stakeholder-map.md, change-impact-assessment.md, comms-plan.md, training-plan.md, rollout-hypercare-checklist.md · Measurement — adoption-tracker.xlsx, benefit-tracker.xlsx.
 
 ---
 
