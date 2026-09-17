@@ -1,0 +1,53 @@
+{
+  "full_calc_on_load": true,
+  "sheets": [
+    {
+      "name": "Scorecard",
+      "column_widths": {"A": 30, "B": 13, "C": 13, "D": 13, "E": 13, "F": 13, "G": 14, "H": 13, "I": 13, "J": 9, "K": 30},
+      "merges": ["A1:K1", "A2:K2"],
+      "rows": [
+        [{"value": "Opportunity Triage Scorecard", "bold": true, "font_size": 16}, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Phase 0 · score each criterion 0–2 · max 16 · verdict: ≥12 HIGH (start discovery) · 9–11 MEDIUM (compare with portfolio) · <9 LOW (defer/reject)", "italic": true, "font_size": 10, "font_color": "595959"}, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Opportunity name", "bold": true, "fill": "D9E1F2"}, {"value": "Strategic fit", "bold": true, "fill": "D9E1F2"}, {"value": "Pain severity", "bold": true, "fill": "D9E1F2"}, {"value": "Scale / volume", "bold": true, "fill": "D9E1F2"}, {"value": "Benefit potential", "bold": true, "fill": "D9E1F2"}, {"value": "Feasibility", "bold": true, "fill": "D9E1F2"}, {"value": "Cost & complexity (2 = low)", "bold": true, "fill": "D9E1F2"}, {"value": "Risk of doing nothing", "bold": true, "fill": "D9E1F2"}, {"value": "Urgency", "bold": true, "fill": "D9E1F2"}, {"value": "Total", "bold": true, "fill": "D9E1F2"}, {"value": "Verdict", "bold": true, "fill": "D9E1F2"}],
+        [{"value": "Example: Invoice processing", "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 1, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 1, "fill": "FFF2CC"}, {"formula": "=SUM(B5:I5)", "bold": true}, {"formula": "=IF(J5>=12,\"HIGH — start discovery\",IF(J5>=9,\"MEDIUM — compare with portfolio\",\"LOW — defer/reject\"))", "bold": true}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=SUM(B6:I6)"}, {"formula": "=IF(J6>=12,\"HIGH — start discovery\",IF(J6>=9,\"MEDIUM — compare with portfolio\",\"LOW — defer/reject\"))"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=SUM(B7:I7)"}, {"formula": "=IF(J7>=12,\"HIGH — start discovery\",IF(J7>=9,\"MEDIUM — compare with portfolio\",\"LOW — defer/reject\"))"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=SUM(B8:I8)"}, {"formula": "=IF(J8>=12,\"HIGH — start discovery\",IF(J8>=9,\"MEDIUM — compare with portfolio\",\"LOW — defer/reject\"))"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=SUM(B9:I9)"}, {"formula": "=IF(J9>=12,\"HIGH — start discovery\",IF(J9>=9,\"MEDIUM — compare with portfolio\",\"LOW — defer/reject\"))"}]
+      ],
+      "validations": [
+        {"range": "B5:I9", "type": "list", "formula1": "\"0,1,2\""}
+      ],
+      "conditional_formats": [
+        {"range": "J5:J9", "type": "cell_is", "operator": "greaterThanOrEqual", "formula": ["12"], "fill": "C6EFCE"},
+        {"range": "J5:J9", "type": "cell_is", "operator": "lessThan", "formula": ["9"], "fill": "FFC7CE"}
+      ]
+    },
+    {
+      "name": "Criteria Guide",
+      "column_widths": {"A": 30, "B": 70},
+      "rows": [
+        [{"value": "Triage criteria guide", "bold": true, "font_size": 13}],
+        [{"value": "Score 0–2 per criterion. Scores are RELATIVE to your portfolio, not absolute quality ratings."}],
+        [{"value": ""}],
+        [{"value": "Criterion", "bold": true, "fill": "D9E1F2"}, {"value": "What 2 / 1 / 0 mean", "bold": true, "fill": "D9E1F2"}],
+        [{"value": "1. Strategic fit", "wrap": true}, {"value": "2 = directly supports a declared strategic initiative · 1 = indirect / supportive · 0 = not linked to strategy", "wrap": true}],
+        [{"value": "2. Pain severity", "wrap": true}, {"value": "2 = process is broken/urgent, errors or delays cause real damage · 1 = annoying inefficiency · 0 = minor", "wrap": true}],
+        [{"value": "3. Scale / volume", "wrap": true}, {"value": "2 = affects many people or processes, high frequency · 1 = moderate · 0 = small", "wrap": true}],
+        [{"value": "4. Benefit potential", "wrap": true}, {"value": "2 = clear quantifiable hours/$ (can be modeled in the ROI model) · 1 = some, harder to quantify · 0 = mostly soft", "wrap": true}],
+        [{"value": "5. Feasibility", "wrap": true}, {"value": "2 = data/access/systems ready, no blockers · 1 = partial or moderate prep work · 0 = significant blockers (data, compliance, legacy)", "wrap": true}],
+        [{"value": "6. Cost & complexity (2 = low)", "wrap": true}, {"value": "2 = low effort, reuse of existing tools/platform possible · 1 = moderate build or buy · 0 = complex, multi-system, high cost", "wrap": true}],
+        [{"value": "7. Risk of doing nothing", "wrap": true}, {"value": "2 = risk grows over time (compliance, cost, attrition) · 1 = moderate · 0 = low", "wrap": true}],
+        [{"value": "8. Urgency", "wrap": true}, {"value": "2 = needed this quarter · 1 = needed this year · 0 = can wait", "wrap": true}],
+        [{"value": ""}],
+        [{"value": "How to use", "bold": true, "font_size": 13}],
+        [{"value": "- Who scores: EPO with the process owner; portfolio view resolves conflicts between opportunities."}],
+        [{"value": "- HIGH (≥12): start Phase 1 discovery and build a business case."}],
+        [{"value": "- MEDIUM (9–11): keep on the list; compare against other opportunities before committing discovery capacity."}],
+        [{"value": "- LOW (<9): defer or reject; revisit deferred items quarterly."}],
+        [{"value": "- Pair with the intake template (one intake per opportunity) and the ROI model once the case gets serious."}]
+      ]
+    }
+  ]
+}

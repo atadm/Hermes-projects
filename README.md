@@ -16,6 +16,11 @@ Placeholder project folder for general experiments, documentation, and loose wor
 - `templates/` — reusable skill / doc templates (e.g. `project-readme-review`)
 - (project folders will be added as work starts)
 
+## Projects
+
+- `ai-strategy/` — company AI strategy research and rollout
+- `enterprise-po-operating-model/` — Enterprise PO playbook: process, instruments, templates
+
 ## Conventions (Hermes-projects)
 
 - Each real project gets its own subfolder: `README.md` (status), `design.md` (architecture truth), `build-plan.md` (plan)
