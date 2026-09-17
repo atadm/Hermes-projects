@@ -8,6 +8,7 @@
 - [templates/business-case-canvas.md](templates/business-case-canvas.md) — one-page business case: problem, baseline, options, investment, benefits, KPIs, risks, gates, kill criteria, approvals.
 - [templates/intake-template.md](templates/intake-template.md) — Phase 0 intake form: plain-language problem, affected users, volume, evidence.
 - [templates/triage-scorecard.xlsx](templates/triage-scorecard.xlsx) — Phase 0 triage: 8 criteria × 0–2 (max 16), auto-total + verdict (≥12 HIGH / 9–11 MEDIUM / <9 LOW), 0–2 dropdowns.
+- [templates/steering-pager.md](templates/steering-pager.md) — monthly steering 1-pager: outcomes-first metrics, financials vs plan, top risks, decisions needed.
 
 **Next steps:**
 - [x] Draft ROI model + business case canvas templates

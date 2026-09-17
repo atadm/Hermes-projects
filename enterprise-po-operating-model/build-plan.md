@@ -9,7 +9,7 @@
 | 1 | Playbook v0.1 (role, process, instruments, governance skeleton) | ✅ Done |
 | 2 | Phase 0 templates (intake, triage scorecard) | ✅ Done |
 | 3 | Economics templates (ROI model, business case canvas) | ✅ Done |
-| 4 | Steering 1-pager | ⏳ Next |
+| 4 | Steering 1-pager | ✅ Done |
 | 5 | RAID log, decision log templates | ⛔ Planned |
 | 6 | Team workshops 1–3 (role/process → instruments → governance) | ⛔ Planned |
 | 7 | Confirm ROI conventions with Finance | ⛔ Planned |
