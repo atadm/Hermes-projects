@@ -13,6 +13,7 @@
 - [templates/decision-log.md](templates/decision-log.md) — append-only decision log: context, options, rationale, supersessions. Kills tribal knowledge.
 - [templates/adoption-tracker.xlsx](templates/adoption-tracker.xlsx) — Phase 4–5 adoption: targets block, weekly active users → auto adoption % vs target, actual hours saved, escalation rule.
 - [templates/benefit-tracker.xlsx](templates/benefit-tracker.xlsx) — Phase 5 benefit realization: baseline vs plan vs quarterly actuals, direction-aware % of plan (higher/lower), auto status (On track/Behind/At risk).
+- [workshops/](workshops/README.md) — workshop pack: facilitator guide + 3 session agendas (role/process → instruments → governance/metrics) + project mapping worksheet. The adoption vehicle for the whole kit.
 
 **Next steps:**
 - [x] Draft ROI model + business case canvas templates

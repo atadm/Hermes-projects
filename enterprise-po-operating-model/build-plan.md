@@ -11,9 +11,9 @@
 | 3 | Economics templates (ROI model, business case canvas) | ✅ Done |
 | 4 | Steering 1-pager | ✅ Done |
 | 5 | RAID log, decision log templates | ✅ Done |
-| 6 | Team workshops 1–3 (role/process → instruments → governance) | ⛔ Planned |
-| 7 | Confirm ROI conventions with Finance | ⛔ Planned |
-| 8 | Template storage decision (single source of truth) | ⛔ Planned |
+| 6 | Team workshops 1–3 (role/process → instruments → governance) | ✅ Pack ready; sessions to run |
+| 7 | Confirm ROI conventions with Finance | ⛔ Planned (W3) |
+| 8 | Template storage decision (single source of truth) | ⛔ Planned (W2) |
 
 ## Instrument backlog (by priority)
 
