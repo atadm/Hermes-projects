@@ -1,0 +1,41 @@
+{
+  "full_calc_on_load": true,
+  "sheets": [
+    {
+      "name": "Pain Points",
+      "column_widths": {"A": 6, "B": 34, "C": 20, "D": 12, "E": 12, "F": 14, "G": 14, "H": 12, "I": 14, "J": 14, "K": 26, "L": 22},
+      "merges": ["A1:L1", "A2:L2"],
+      "rows": [
+        [{"value": "Pain Quantification Sheet — <Process>", "bold": true, "font_size": 16}, null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Phase 1 · quantifies the as-is baseline BEFORE automation · totals feed the business case and ROI model", "italic": true, "font_size": 10, "font_color": "595959"}, null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Fully loaded rate ($/h):", "bold": true}, null, {"value": 17.31, "fill": "FFF2CC", "format": "$#,##0.00"}, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "#", "bold": true, "fill": "D9E1F2"}, {"value": "Pain point", "bold": true, "fill": "D9E1F2"}, {"value": "Affected group", "bold": true, "fill": "D9E1F2"}, {"value": "People affected", "bold": true, "fill": "D9E1F2"}, {"value": "Frequency (×/person/week)", "bold": true, "fill": "D9E1F2"}, {"value": "Avg time lost (min)", "bold": true, "fill": "D9E1F2"}, {"value": "Annual hours lost", "bold": true, "fill": "D9E1F2"}, {"value": "Rate ($/h)", "bold": true, "fill": "D9E1F2"}, {"value": "Annual $ cost", "bold": true, "fill": "D9E1F2"}, {"value": "Error/risk impact", "bold": true, "fill": "D9E1F2"}, {"value": "Evidence / source", "bold": true, "fill": "D9E1F2"}, {"value": "Notes", "bold": true, "fill": "D9E1F2"}],
+        [{"value": 1, "fill": "FFF2CC"}, {"value": "Manual invoice data entry", "fill": "FFF2CC"}, {"value": "AP team", "fill": "FFF2CC"}, {"value": 5, "fill": "FFF2CC"}, {"value": 20, "fill": "FFF2CC"}, {"value": 15, "fill": "FFF2CC"}, {"formula": "=D6*E6*F6/60*52", "format": "#,##0", "bold": true}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G6*H6", "format": "$#,##0", "bold": true}, {"value": "M", "fill": "FFF2CC"}, {"value": "Team survey Sep 2026", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": 2, "fill": "FFF2CC"}, {"value": "Error corrections in PO creation", "fill": "FFF2CC"}, {"value": "Procurement", "fill": "FFF2CC"}, {"value": 3, "fill": "FFF2CC"}, {"value": 8, "fill": "FFF2CC"}, {"value": 20, "fill": "FFF2CC"}, {"formula": "=D7*E7*F7/60*52", "format": "#,##0", "bold": true}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G7*H7", "format": "$#,##0", "bold": true}, {"value": "H", "fill": "FFF2CC"}, {"value": "QA log", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": 3, "fill": "FFF2CC"}, {"value": "Email chasing approvals", "fill": "FFF2CC"}, {"value": "AP + team leads", "fill": "FFF2CC"}, {"value": 8, "fill": "FFF2CC"}, {"value": 10, "fill": "FFF2CC"}, {"value": 5, "fill": "FFF2CC"}, {"formula": "=D8*E8*F8/60*52", "format": "#,##0", "bold": true}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G8*H8", "format": "$#,##0", "bold": true}, {"value": "L", "fill": "FFF2CC"}, {"value": "Inbox analysis", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": 4, "fill": "FFF2CC"}, {"value": "Manual report building", "fill": "FFF2CC"}, {"value": "Finance", "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 2, "fill": "FFF2CC"}, {"value": 90, "fill": "FFF2CC"}, {"formula": "=D9*E9*F9/60*52", "format": "#,##0", "bold": true}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G9*H9", "format": "$#,##0", "bold": true}, {"value": "M", "fill": "FFF2CC"}, {"value": "Process owner", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": 5, "fill": "FFF2CC"}, {"value": "Rework from copy-paste errors", "fill": "FFF2CC"}, {"value": "Operations", "fill": "FFF2CC"}, {"value": 6, "fill": "FFF2CC"}, {"value": 4, "fill": "FFF2CC"}, {"value": 30, "fill": "FFF2CC"}, {"formula": "=D10*E10*F10/60*52", "format": "#,##0", "bold": true}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G10*H10", "format": "$#,##0", "bold": true}, {"value": "H", "fill": "FFF2CC"}, {"value": "Error log", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=D11*E11*F11/60*52", "format": "#,##0"}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G11*H11", "format": "$#,##0"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=D12*E12*F12/60*52", "format": "#,##0"}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G12*H12", "format": "$#,##0"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=D13*E13*F13/60*52", "format": "#,##0"}, {"formula": "=$C$3", "format": "$#,##0.00"}, {"formula": "=G13*H13", "format": "$#,##0"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "TOTAL", "bold": true, "fill": "E2EFDA"}, null, null, null, null, null, {"formula": "=SUM(G6:G13)", "format": "#,##0", "bold": true, "fill": "E2EFDA"}, null, {"formula": "=SUM(I6:I13)", "format": "$#,##0", "bold": true, "fill": "E2EFDA"}, null, {"value": "≈ FTE: =G14/2080", "italic": true, "font_color": "595959"}, {"value": "Copy totals into business case §3", "italic": true, "font_color": "595959"}]
+      ],
+      "validations": [
+        {"range": "J5:J13", "type": "list", "formula1": "\"H,M,L\""}
+      ]
+    },
+    {
+      "name": "Guide",
+      "column_widths": {"A": 32, "B": 90},
+      "rows": [
+        [{"value": "How to use the Pain Quantification Sheet", "bold": true, "font_size": 13}],
+        [{"value": "Timing", "wrap": true}, {"value": "Complete in Phase 1 BEFORE automation starts. This is the baseline that makes later ROI claims credible (org standard).", "wrap": true}],
+        [{"value": "Data", "wrap": true}, {"value": "Prefer measured data (logs, tickets, time tracking). Where only estimates exist, say so in Evidence and use conservative numbers.", "wrap": true}],
+        [{"value": "Formula", "wrap": true}, {"value": "Annual hours = people × frequency × minutes ÷ 60 × 52 weeks. Rate is the org fully-loaded convention ($36k/yr ÷ 2,080 h).", "wrap": true}],
+        [{"value": "Error/risk impact", "wrap": true}, {"value": "H/M/L for non-time costs: errors, compliance exposure, customer impact. These don't appear in the $ column but belong in the business case.", "wrap": true}],
+        [{"value": "Feeds", "wrap": true}, {"value": "Business case §3 baseline, ROI model inputs (people, minutes, frequency), and the pain narrative for the sponsor.", "wrap": true}]
+      ]
+    }
+  ]
+}

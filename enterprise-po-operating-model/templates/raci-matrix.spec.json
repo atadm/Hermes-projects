@@ -1,0 +1,49 @@
+{
+  "full_calc_on_load": true,
+  "sheets": [
+    {
+      "name": "RACI",
+      "column_widths": {"A": 30, "B": 12, "C": 10, "D": 12, "E": 14, "F": 12, "G": 10, "H": 12, "I": 12, "J": 12, "K": 10},
+      "merges": ["A1:K1", "A2:K2"],
+      "rows": [
+        [{"value": "RACI Matrix — <Project>", "bold": true, "font_size": 16}, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "R = responsible (does the work) · A = accountable (final say, one per row) · C = consulted (input before) · I = informed (told after)", "italic": true, "font_size": 10, "font_color": "595959"}, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [{"value": "Activity", "bold": true, "fill": "D9E1F2"}, {"value": "Sponsor", "bold": true, "fill": "D9E1F2"}, {"value": "EPO", "bold": true, "fill": "D9E1F2"}, {"value": "Delivery lead", "bold": true, "fill": "D9E1F2"}, {"value": "Architecture", "bold": true, "fill": "D9E1F2"}, {"value": "Security/Compl", "bold": true, "fill": "D9E1F2"}, {"value": "Finance", "bold": true, "fill": "D9E1F2"}, {"value": "Procurement", "bold": true, "fill": "D9E1F2"}, {"value": "Process owner", "bold": true, "fill": "D9E1F2"}, {"value": "Comms/HR", "bold": true, "fill": "D9E1F2"}, {"value": "Users", "bold": true, "fill": "D9E1F2"}],
+        [{"value": "Business case & funding (G2)", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}],
+        [{"value": "Solution selection (build/buy/configure)", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}],
+        [{"value": "PRD approval", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}],
+        [{"value": "Vendor selection & contract", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}],
+        [{"value": "Delivery execution", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}],
+        [{"value": "UAT sign-off", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}],
+        [{"value": "Go-live decision (G4)", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}],
+        [{"value": "Training & comms", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}],
+        [{"value": "Adoption & value review (G5)", "fill": "FFF2CC"}, {"value": "A", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}],
+        [{"value": "Benefits reporting", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "R", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "C", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}, {"value": "I", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}]
+      ],
+      "validations": [
+        {"range": "B5:K17", "type": "list", "formula1": "\"R,A,C,I\""}
+      ],
+      "conditional_formats": [
+        {"range": "B5:K17", "type": "cell_is", "operator": "equal", "formula": ["\"R\""], "fill": "B4C7E7"},
+        {"range": "B5:K17", "type": "cell_is", "operator": "equal", "formula": ["\"A\""], "fill": "C6EFCE"},
+        {"range": "B5:K17", "type": "cell_is", "operator": "equal", "formula": ["\"C\""], "fill": "FFEB9C"},
+        {"range": "B5:K17", "type": "cell_is", "operator": "equal", "formula": ["\"I\""], "fill": "E7E6E6"}
+      ]
+    },
+    {
+      "name": "Guide",
+      "column_widths": {"A": 30, "B": 90},
+      "rows": [
+        [{"value": "How to use the RACI Matrix", "bold": true, "font_size": 13}],
+        [{"value": "Definitions", "wrap": true}, {"value": "R = does the work · A = accountable, final say (ONE per row — if two As, the decision is not defined) · C = consulted before the action · I = informed after.", "wrap": true}],
+        [{"value": "Rules", "wrap": true}, {"value": "Exactly one A per row. A and R can be the same person for small items, but for gates they should differ (A = sponsor, R = EPO). Conflict → escalate to sponsor.", "wrap": true}],
+        [{"value": "Cadence", "wrap": true}, {"value": "Build in Phase 1; review at every gate. If a row has no R or no A, that activity is not owned.", "wrap": true}],
+        [{"value": "Linkage", "wrap": true}, {"value": "RACI feeds the decision rights table (Workshop 3) and the comms plan (who to inform).", "wrap": true}]
+      ]
+    }
+  ]
+}

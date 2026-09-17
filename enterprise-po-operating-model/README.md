@@ -23,6 +23,12 @@
 - [templates/comms-plan.md](templates/comms-plan.md) — audience × message × channel × timing; 3-messages-max rule; sponsor-speaks-first; phased (pre-launch/launch/reinforce).
 - [templates/training-plan.md](templates/training-plan.md) — role-specific training plan + materials checklist; completion is a Gate 4 condition.
 - [templates/rollout-hypercare-checklist.md](templates/rollout-hypercare-checklist.md) — Gate 4 pre-launch checks, wave plan, hypercare support tiers (L1/L2/L3), post-hypercare handover to Gate 5.
+- [templates/tco-model.xlsx](templates/tco-model.xlsx) — 3-yr/5-yr TCO per option (Build/Buy/Configure), 8 cost categories, cross-sheet comparison, normalization rules.
+- [templates/pain-quantification.xlsx](templates/pain-quantification.xlsx) — Phase 1 as-is baseline: pain points → auto annual hours + $ at org rate, evidence column, feeds business case.
+- [templates/raci-matrix.xlsx](templates/raci-matrix.xlsx) — activities × roles with R/A/C/I dropdowns + color rules; one A per row rule; gate decision examples pre-filled.
+- [templates/backlog-roadmap.md](templates/backlog-roadmap.md) — 3-horizon roadmap + backlog rules: priority traces to business case, no creep without decision log, definition of done.
+- [templates/kpi-tree.md](templates/kpi-tree.md) — outcome → drivers → measures; KPI definition table (formula/source/owner/target); no activity metrics rule.
+- [templates/quarterly-value-review.md](templates/quarterly-value-review.md) — Phase 5 ritual pack: benefits vs plan, financial roll-up, scale/adjust/retire recommendation, next-quarter plan.
 - [workshops/](workshops/README.md) — workshop pack: facilitator guide + 3 session agendas (role/process → instruments → governance/metrics) + project mapping worksheet. The adoption vehicle for the whole kit.
 
 **Next steps:**

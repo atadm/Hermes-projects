@@ -25,8 +25,12 @@
 6. Risk register — merged into RAID log (Impact × Probability = exposure)
 7. Selection kit: build-vs-buy matrix, vendor scorecard, RFI/RFP, PoC evaluation — ✅ done
 8. Batch 1 (Change + PRD): stakeholder map, change impact, comms plan, training plan, rollout/hypercare, PRD — ✅ done
-9. Batch 2 (remaining): TCO model, pain quantification, RACI, backlog/roadmap, KPI tree, quarterly value review — ⛔ next
+9. Batch 2 (remaining): TCO model, pain quantification, RACI, backlog/roadmap, KPI tree, quarterly value review — ✅ done
 10. Workshop pack for sessions 1–3 — ✅ done (sessions to run)
+
+## Coverage
+
+All 27 playbook instruments now have working templates (13 xlsx + 12 md). Value stream map = method + tooling; risk register merged into RAID. Remaining work is adoption: run workshops, confirm ROI convention with Finance, decide template storage.
 
 ## Rules
 
