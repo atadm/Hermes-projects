@@ -1,0 +1,45 @@
+{
+  "full_calc_on_load": true,
+  "sheets": [
+    {
+      "name": "Adoption Tracker",
+      "column_widths": {"A": 14, "B": 14, "C": 14, "D": 16, "E": 16, "F": 36},
+      "merges": ["A1:F1", "A2:F2"],
+      "rows": [
+        [{"value": "Adoption Tracker — <Product / Process>", "bold": true, "font_size": 16}, null, null, null, null, null],
+        [{"value": "Phase 4–5 · measure OUTCOMES: adoption, tasks completed, hours saved · update weekly during rollout, monthly after", "italic": true, "font_size": 10, "font_color": "595959"}, null, null, null, null, null],
+        [null, null, null, null, null, null],
+        [{"value": "TARGETS (edit yellow)", "bold": true, "fill": "FFF2CC"}, null, null, null, null, null],
+        [{"value": "Target user population", "align": "left"}, {"value": 50, "fill": "FFF2CC", "format": "#,##0"}, {"value": "people"}, null, null, null],
+        [{"value": "Target adoption rate", "align": "left"}, {"value": 0.8, "fill": "FFF2CC", "format": "0%"}, {"value": "%"}, null, null, null],
+        [{"value": "Target active users", "bold": true}, {"formula": "=B5*B6", "format": "#,##0", "bold": true}, {"value": "people"}, null, null, null],
+        [{"value": "Target date", "align": "left"}, {"value": "2026-12-31", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, null, null, null, null],
+        [null, null, null, null, null, null],
+        [{"value": "Date", "bold": true, "fill": "D9E1F2"}, {"value": "Active users", "bold": true, "fill": "D9E1F2"}, {"value": "Adoption %", "bold": true, "fill": "D9E1F2"}, {"value": "Tasks completed", "bold": true, "fill": "D9E1F2"}, {"value": "Hours saved (actual)", "bold": true, "fill": "D9E1F2"}, {"value": "Notes", "bold": true, "fill": "D9E1F2"}],
+        [{"value": "2026-10-05", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": 15, "fill": "FFF2CC", "format": "#,##0"}, {"formula": "=B11/$B$5", "format": "0%"}, {"value": 320, "fill": "FFF2CC", "format": "#,##0"}, {"value": 8, "fill": "FFF2CC", "format": "#,##0"}, {"value": "Rollout wave 1", "fill": "FFF2CC"}],
+        [{"value": "2026-10-12", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": 22, "fill": "FFF2CC", "format": "#,##0"}, {"formula": "=B12/$B$5", "format": "0%"}, {"value": 510, "fill": "FFF2CC", "format": "#,##0"}, {"value": 14, "fill": "FFF2CC", "format": "#,##0"}, {"value": "Wave 2", "fill": "FFF2CC"}],
+        [{"value": "2026-10-19", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": 28, "fill": "FFF2CC", "format": "#,##0"}, {"formula": "=B13/$B$5", "format": "0%"}, {"value": 690, "fill": "FFF2CC", "format": "#,##0"}, {"value": 21, "fill": "FFF2CC", "format": "#,##0"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "2026-10-26", "type": "date", "format": "yyyy-mm-dd", "fill": "FFF2CC"}, {"value": 34, "fill": "FFF2CC", "format": "#,##0"}, {"formula": "=B14/$B$5", "format": "0%"}, {"value": 850, "fill": "FFF2CC", "format": "#,##0"}, {"value": 27, "fill": "FFF2CC", "format": "#,##0"}, {"value": "Steady ramp", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=B15/$B$5", "format": "0%"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}],
+        [{"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"formula": "=B16/$B$5", "format": "0%"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}, {"value": "", "fill": "FFF2CC"}]
+      ],
+      "conditional_formats": [
+        {"range": "C11:C16", "type": "cell_is", "operator": "greaterThanOrEqual", "formula": ["$B$6"], "fill": "C6EFCE"},
+        {"range": "C11:C16", "type": "cell_is", "operator": "lessThan", "formula": ["$B$6*0.7"], "fill": "FFC7CE"}
+      ]
+    },
+    {
+      "name": "Guide",
+      "column_widths": {"A": 32, "B": 90},
+      "rows": [
+        [{"value": "How to use the Adoption Tracker", "bold": true, "font_size": 13}],
+        [{"value": "Active user", "wrap": true}, {"value": "Someone who actually used the automation at least once in the period (define per product; use system logs, not surveys).", "wrap": true}],
+        [{"value": "Adoption %", "wrap": true}, {"value": "Active users ÷ target population (auto). Compare against the target rate; green ≥ target, red < 70% of target.", "wrap": true}],
+        [{"value": "Hours saved (actual)", "wrap": true}, {"value": "From logs or time samples. Estimates belong in the business case; the tracker holds ACTUALS only.", "wrap": true}],
+        [{"value": "Data sources", "wrap": true}, {"value": "Product analytics, bot/workflow run logs, helpdesk tickets. If a metric has no data source, mark it and flag in steering.", "wrap": true}],
+        [{"value": "Cadence", "wrap": true}, {"value": "Weekly during rollout/hypercare, monthly after. Two consecutive periods below target → escalate to steering (Gate 5 risk).", "wrap": true}],
+        [{"value": "Linkage", "wrap": true}, {"value": "Adoption numbers feed the steering 1-pager metrics table and the Benefit Realization Tracker.", "wrap": true}]
+      ]
+    }
+  ]
+}

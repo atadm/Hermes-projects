@@ -110,6 +110,8 @@ Phase 0 Intake → G1 → Phase 1 Discovery → G2 → Phase 2 Selection → G3
 
 **Minimal viable set for week one** (do not start with 27): Intake, Business case canvas + ROI model, Value stream map, RAID log, Decision log, Steering pack, Adoption tracker, Benefit realization tracker. Add the rest as the team's projects demand.
 
+**Tooling preferences:** process/value-stream mapping via **diagrams.net (draw.io), Confluence diagrams, or Figma** (not Miro). Backlog, docs, and dashboards per org standards.
+
 ---
 
 ## 4. Governance & decision rights (to be completed in workshop)

@@ -11,6 +11,8 @@
 - [templates/steering-pager.md](templates/steering-pager.md) — monthly steering 1-pager: outcomes-first metrics, financials vs plan, top risks, decisions needed.
 - [templates/raid-log.xlsx](templates/raid-log.xlsx) — RAID tracker: R/A/I/D types, status + RAG dropdowns, auto exposure (impact × probability), color-coded, autofilter + frozen header.
 - [templates/decision-log.md](templates/decision-log.md) — append-only decision log: context, options, rationale, supersessions. Kills tribal knowledge.
+- [templates/adoption-tracker.xlsx](templates/adoption-tracker.xlsx) — Phase 4–5 adoption: targets block, weekly active users → auto adoption % vs target, actual hours saved, escalation rule.
+- [templates/benefit-tracker.xlsx](templates/benefit-tracker.xlsx) — Phase 5 benefit realization: baseline vs plan vs quarterly actuals, direction-aware % of plan (higher/lower), auto status (On track/Behind/At risk).
 
 **Next steps:**
 - [x] Draft ROI model + business case canvas templates

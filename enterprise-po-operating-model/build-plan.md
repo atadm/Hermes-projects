@@ -17,12 +17,14 @@
 
 ## Instrument backlog (by priority)
 
-1. Steering 1-pager (Phase 3–5 reporting) — in progress
-2. RAID log (delivery governance)
-3. Decision log (anti tribal-knowledge)
-4. Risk register (may merge with RAID)
-5. Stakeholder map / comms plan templates (Phase 1/4)
-6. Benefit realization tracker (Phase 5)
+1. Steering 1-pager (Phase 3–5 reporting) — ✅ done
+2. RAID log (delivery governance) — ✅ done
+3. Decision log (anti tribal-knowledge) — ✅ done
+4. Adoption tracker (Phase 4–5) — ✅ done
+5. Benefit realization tracker (Phase 5) — ✅ done
+6. Risk register — merged into RAID log (Impact × Probability = exposure)
+7. Stakeholder map / comms plan templates (Phase 1/4)
+8. Workshop pack for sessions 1–3
 
 ## Rules
 
