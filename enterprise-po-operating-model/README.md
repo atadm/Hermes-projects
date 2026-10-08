@@ -1,6 +1,13 @@
 # Enterprise PO Operating Model
 
-**Status:** Draft v0.1 (17 Sep 2026) — baseline for team workshops, not yet adopted.
+**Status:** Draft v0.2 (8 Oct 2026) — gates G1 and G2 refined with decision rights (EPO recommends → Sponsor decides). Ready for team workshops.
+
+**Key changes from v0.1:**
+- G1 renamed to **Priority Checkpoint** — EPO recommends priority based on triage, Sponsor approves queue order
+- G2 renamed to **Go/No-Go** — EPO presents business case (feasibility, cost, value, ROI, proposed solution), Sponsor decides Go or No-Go
+- Decision rights table added to §4 covering all gates + quarterly reviews
+- Design principle: "EPO prepares, Sponsor decides — no one approves their own proposal"
+- Go/No-Go decisions recorded in decision log; No-Go decisions preserved for future reference
 
 **Deliverables:**
 - [playbook.md](playbook.md) — role definition, 6-phase/5-gate process, instrument list (27 starters), governance & decision rights skeleton, value measurement standards, 3-session workshop plan, anti-patterns.

@@ -22,11 +22,12 @@ An Enterprise PO is the single accountable owner of **business value** for an in
 
 **Core accountabilities:**
 1. Opportunity framing and business case (economics first)
-2. Stakeholder and sponsor management
-3. Requirements and solution ownership (build / buy / configure)
-4. Delivery governance (with delivery leads/PMs where they exist)
-5. Adoption and change — where most value is won or lost
-6. Value measurement and reporting after go-live
+2. Gate recommendation preparation — produces the analysis and proposal; does not approve own recommendation
+3. Stakeholder and sponsor management
+4. Requirements and solution ownership (build / buy / configure)
+5. Delivery governance (with delivery leads/PMs where they exist)
+6. Adoption and change — where most value is won or lost
+7. Value measurement and reporting after go-live
 
 **Explicit non-ownership** (align in workshop): security/compliance final approval, architecture decisions, infrastructure ops, procurement contract terms — EPO *drives* these but does not *own* them. Decision rights table needed (see §4).
 
@@ -35,21 +36,36 @@ An Enterprise PO is the single accountable owner of **business value** for an in
 ## 2. Process: 6 phases, 5 gates
 
 ```
-Phase 0 Intake → G1 → Phase 1 Discovery → G2 → Phase 2 Selection → G3
+Phase 0 Intake → G1 (EPO recommends → Sponsor prioritizes) → Phase 1 Discovery
+→ G2 (EPO recommends → Sponsor decides Go/No-Go) → Phase 2 Selection → G3
 → Phase 3 Delivery → G4 → Phase 4 Adoption → G5 → Phase 5 Value (recurring)
 ```
 
 ### Phase 0 — Intake & Triage (1–2 weeks)
-- **Purpose:** Decide whether an opportunity is worth discovery investment.
+- **Purpose:** Decide whether an opportunity is worth discovery investment and at what priority.
 - **Activities:** Capture the ask; estimate rough economics; score against portfolio priorities.
 - **Instruments:** Intake template; triage scorecard.
-- **Gate 1 (Discovery approved):** clear problem + pain owner; rough economics plausible; strategic fit; no obvious blocker (compliance/legal/data).
+- **Gate 1 — Priority Checkpoint (EPO recommends → Sponsor approves priority):**
+  - **EPO prepares:** Triage summary with priority recommendation — score against portfolio fit, urgency, strategic alignment, rough economics, no obvious blocker.
+  - **Sponsor decides:** Which tasks proceed to Phase 1 discovery and in what priority order.
+  - **Criteria:** Clear problem + pain owner identified; rough economics plausible (≥ threshold TBD); strategic fit confirmed; no obvious blocker (compliance/legal/data/privacy).
+  - **Output:** Prioritised discovery queue with approved tasks and order.
 
 ### Phase 1 — Discovery & Business Case (2–6 weeks)
-- **Purpose:** Understand the as-is process, quantify pain, define success, size options.
-- **Activities:** Process mapping (as-is/to-be); pain quantification with process owners; stakeholder & change-impact assessment; options identification (do nothing / improve / automate / transform); draft business case.
+- **Purpose:** Understand the as-is process, quantify pain, define success, size options, produce a go/no-go recommendation.
+- **Activities:** Process mapping (as-is/to-be); pain quantification with process owners; stakeholder & change-impact assessment; options identification (do nothing / improve / automate / transform); feasibility assessment; cost estimation (investment + running); value and ROI calculation; proposed solution outline; draft business case.
 - **Instruments:** Value stream map; pain quantification sheet; stakeholder map; change impact assessment (draft); business case canvas; ROI model (org conventions).
-- **Gate 2 (Business case approved & funded):** quantified baseline captured **before** deployment; ROI model signed by sponsor; option selected; budget allocated.
+- **Gate 2 — Go/No-Go (EPO recommends → Sponsor decides):**
+  - **EPO prepares:** Complete business case covering:
+    - Feasibility assessment (technical, operational, regulatory)
+    - Total cost estimate (build/buy/configure, running costs)
+    - Value quantification (hours saved, cost reduction, risk reduction)
+    - ROI model (payback period, break-even, 3-yr ROI)
+    - Proposed solution outline (what, how, by whom)
+    - Risk assessment and mitigation approach
+  - **Sponsor decides:** **Go** (approve budget, authorise Phase 2) or **No-Go** (kill or defer — recorded in decision log with rationale).
+  - **Criteria:** Quantified baseline captured **before** deployment; feasibility confirmed (tech + ops + regulatory); ROI meets org threshold; option selected; budget allocated; sponsor signs off.
+  - **Output:** Signed business case with Go/No-Go decision recorded in decision log.
 
 ### Phase 2 — Solution Selection (2–8 weeks incl. procurement)
 - **Purpose:** Choose the cheapest sufficient path: build, buy, or configure (incl. no-code / AI agents).
@@ -116,12 +132,22 @@ Phase 0 Intake → G1 → Phase 1 Discovery → G2 → Phase 2 Selection → G3
 
 ---
 
-## 4. Governance & decision rights (to be completed in workshop)
+## 4. Governance & decision rights
 
-- Steering cadence: monthly steering 1-pager; gate decisions at G2 and G4 (money and go-live); quarterly value reviews after launch.
-- Decision rights: who approves each gate; who escalates; sponsor accountability.
+| Decision | Who prepares (proposes) | Who decides (approves) | When | Mechanism |
+|----------|------------------------|----------------------|------|-----------|
+| **G1: Priority Checkpoint** — which tasks proceed to discovery and in what order | EPO (triage summary + priority ranking) | Sponsor | End of Phase 0 | Triage scorecard + priority list signed by sponsor |
+| **G2: Go/No-Go** — approve project budget and authorise solution selection | EPO (business case with feasibility, cost, value, ROI, proposed solution) | Sponsor | End of Phase 1 | Signed business case; decision recorded in decision log |
+| **G3: Delivery go-ahead** — approve selected solution and start build | EPO | Sponsor + Architecture review | End of Phase 2 | Vendor/TCO docs + security/compliance clearance |
+| **G4: Go-live** — approve production launch | EPO | Sponsor + Operations | End of Phase 3 | UAT sign-off, security/compliance, training & comms ready |
+| **G5: Value review & handover** — close active phase, start ongoing measurement | EPO | Sponsor | End of Phase 4 | Adoption targets met or trajectory confirmed |
+| **Quarterly value review** — scale, adjust, or retire | EPO (benefit tracker + KPI dashboard) | Sponsor | Quarterly in Phase 5 | Quarterly value review pack |
+
+**Design principle:** EPO prepares the recommendation and evidence. Sponsor makes the call. No one approves their own proposal.
+
 - Compliance touchpoints: security review, architecture review, data protection review, EU AI Act literacy record (deployer role) — built into gates 2–4, not after.
 - Reporting standard: one steering pack format; no bespoke decks.
+- Escalation: unresolved blockers at any gate are escalated by the EPO to the sponsor within 5 working days. If sponsor cannot resolve, it goes to the next governance level (steering committee / exec).
 
 ---
 
@@ -132,6 +158,7 @@ Phase 0 Intake → G1 → Phase 1 Discovery → G2 → Phase 2 Selection → G3
 - Baselines captured **before** deployment; benefit claims require before/after evidence.
 - Benefits re-validated quarterly post-launch; unachieved benefits are reviewed, not hidden.
 - Every business case states: expected payback period, break-even trigger, and the kill/stop criteria.
+- Every Go/No-Go decision is recorded in the decision log with rationale; No-Go decisions are not deleted — they serve as reference for future resubmissions.
 
 ---
 
