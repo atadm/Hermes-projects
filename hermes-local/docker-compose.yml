@@ -1,0 +1,24 @@
+services:
+  agent:
+    build: .
+    image: hermes-local
+    container_name: hermes-mac
+
+    # ── Limited filesystem access (security) ──────────────
+    volumes:
+      # Только то, что вы явно разрешите
+      - ./workspace:/workspace
+      # При необходимости:
+      # - ~/projects/my-app:/workspace/my-app
+
+    # ── API keys ──────────────────────────────────────────
+    env_file:
+      - .env
+
+    # ── Interactive terminal ──────────────────────────────
+    stdin_open: true
+    tty: true
+
+    # ── Network ───────────────────────────────────────────
+    # Агентам нужен интернет для API вызовов
+    network_mode: bridge
